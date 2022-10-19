@@ -10,7 +10,7 @@ function CityObject(image, temperature, feellike, description, country, localtim
 const weather = async (city) => {
     translit(city)
     const respons = await fetch(`
-    http://api.weatherstack.com/current?access_key=09a228f15cb18885fa6dc83aca03ced4&query=${city}`
+    https://api.weatherstack.com/current?access_key=09a228f15cb18885fa6dc83aca03ced4&query=${city}`
     );
     const data = await respons.json();
 
