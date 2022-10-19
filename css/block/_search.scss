@@ -1,0 +1,39 @@
+.search {
+    margin: 100px 0;
+
+    &__field {
+        width: 100%;
+        border: solid 2px $light-green;
+        font-size: 1.4em;
+        padding: 25px;
+        border-radius: 30px;
+
+        &:focus {
+            border-color: $green;
+        }
+    }
+
+    &__button {
+        font-size: 1.4em;
+        margin: 20px 0;
+        background-color: $green;
+        padding: 10px;
+        border-radius: 15px;
+        border: solid 2px $green;
+
+        &:hover {
+            border: solid 2px $green;
+            background-color: white;
+            color: $dark-green;
+        }
+    }
+}
+
+@media (max-width: 320px) { 
+    .search {
+        &__field {
+            font-size: 15px;
+        }
+    }
+}
+

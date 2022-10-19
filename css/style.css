@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  background-color: rgb(255, 255, 255);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.nav__wrapp {
+  padding: 15px 0;
+}
+.nav__logo {
+  font-weight: 700;
+  font-size: 30px;
+  color: #69f0ae;
+}
+
+.search {
+  margin: 100px 0;
+}
+.search__field {
+  width: 100%;
+  border: solid 2px #9fffe0;
+  font-size: 1.4em;
+  padding: 25px;
+  border-radius: 30px;
+}
+.search__field:focus {
+  border-color: #69f0ae;
+}
+.search__button {
+  font-size: 1.4em;
+  margin: 20px 0;
+  background-color: #69f0ae;
+  padding: 10px;
+  border-radius: 15px;
+  border: solid 2px #69f0ae;
+}
+.search__button:hover {
+  border: solid 2px #69f0ae;
+  background-color: white;
+  color: #2bbd7e;
+}
+
+@media (max-width: 320px) {
+  .search__field {
+    font-size: 15px;
+  }
+}
+.weather__wrapp {
+  border: solid 3px #2bbd7e;
+  padding: 30px 50px;
+  border-radius: 30px;
+}
+.weather__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 991px) {
+  .weather {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .weather__row {
+    display: block;
+    text-align: center;
+  }
+  .weather__wrapp {
+    padding: 20px 10px;
+  }
+  .weather__img,
+.weather__temperature,
+.weather__fellike,
+.weather__descriptions {
+    margin: 10px 0;
+  }
+  .weather__location,
+.weather__time {
+    margin: 20px 0;
+  }
+}/*# sourceMappingURL=style.css.map */

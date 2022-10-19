@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="IMG/favicon.ico">
+    <title>GoodWeather</title>
+</head>
+<body>
+    
+    <nav class="nav">
+        <div class="container">
+            <div class="nav__wrapp">
+                <a href="" class="nav__logo">GoodWeather</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="search">
+        <div class="container">
+            <div class="search__wrapp">
+                <input placeholder="Ищем погоду в...." type="text" id="city-value" class="search__field">
+                <button onclick="getCityInfo()" class="search__button">Найти</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="weather">
+        <div class="container">
+            <div class="weather__wrapp">
+
+                <div class="weather__row">
+                    <div class="weather__img"><img id="weather-img" src="" alt=""></div>
+                    <div id="weather-temperature" class="weather__temperature"></div>
+                    <div id="weather-feellike" class="weather__fellike"></div>
+                    <div id="weather-descriptions" class="weather__descriptions"></div>
+                </div>
+
+                <div class="weather__row">
+                    <div id="weather-country" class="weather__location"></div>
+                    <div id="weather-time" class="weather__time"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="js/translater.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

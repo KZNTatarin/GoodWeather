@@ -1,0 +1,57 @@
+.weather {
+    &__wrapp {
+        border: solid 3px $dark-green;
+        padding: 30px 50px;
+        border-radius: 30px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+}
+
+
+@media (max-width: 991px) { 
+    .weather {
+        font-size: 20px;
+    }
+ }
+
+// //Landscape phones and portrait tablets
+@media (max-width: 767px) { 
+    .weather {
+        &__row {
+            display: block;
+            text-align: center;
+        }
+
+        &__wrapp {
+            padding: 20px 10px;
+        }
+    }
+
+    .weather__img,
+    .weather__temperature,
+    .weather__fellike,
+    .weather__descriptions {
+        margin: 10px 0;
+    }
+
+    .weather__location,
+    .weather__time {
+        margin: 20px 0;
+    }
+}
+
+// //XS
+// @media (max-width: 575px) { ... }
+
+// //Portrait phones and smaller
+// @media (max-width: 480px) { ... }
+
+// //Iphone 5 
+// @media (max-width: 320px) { ... }
+
