@@ -47,5 +47,3 @@ const setCityInfo = (objCity) => {
     cityTime.innerHTML = `Дата и время: ` + objCity.localtime;
 }
 
-
-    console.log( translit('cloud') );
